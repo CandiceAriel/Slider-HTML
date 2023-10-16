@@ -1,0 +1,157 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.txt--white{
+  color: #FFFFFF;
+}
+
+.content__container{
+  margin: 75px 0px;
+}
+
+.slider__container{
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.img__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  border-radius: 50px;
+}
+
+.slider img {
+  height: 100%;
+  max-width: 850px;
+}
+
+.slider img:first-child {
+  z-index: 1;
+}
+
+.slider img:nth-child(2) {
+  z-index: 0;
+}
+
+.slider img:nth-child(3) {
+  z-index: -1;
+}
+
+.slider img:nth-child(4) {
+  z-index: -2;
+}
+
+.navigation-button__container{
+  display: flex;
+}
+
+.navigation-button__wrapper{
+  z-index: 2;
+}
+
+.title__container{
+  position: relative;
+  /* left: -50%; */
+  /* float: right; */
+  z-index: 2;
+}
+
+.title__wrapper{
+  margin: auto;
+  width: fit-content;
+}
+
+.title__wrapper h3{
+  position: absolute;
+  top: 6%;
+  z-index: 3;
+}
+
+.play-button__container{
+  position: relative;
+    /* left: -50%; */
+    /* float: right; */
+    z-index: 2;
+    bottom: 158px;
+}
+
+.play-button__wrapper{
+  margin: auto;
+  width: fit-content;
+}
+
+.play-button__wrapper img {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .slider__container{
+    width: 100%;
+    height: 1500px;
+    position: relative;
+  }
+
+  .slider{
+    top: 50%;
+    left: 50%;
+    transform: translate(-47%, -55%);
+  }
+
+  .img__container{
+    height: 1500px;
+  }
+
+  .navigation-button__wrapper{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+  }
+
+  .navigation-button__wrapper:first-child{
+    left: 0px;
+    margin-left: 10px;
+  }
+
+  .navigation-button__wrapper:last-child{
+    right: 0px;
+    margin-right: 10px;
+  }
+
+  .navigation-button__wrapper img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .play-button__wrapper{
+    width: 300px;
+    height: 150px;
+  }
+
+  .title__wrapper h3 {
+    position: absolute;
+    top: -23%;
+    left: 42%;
+    z-index: 3;
+    font-size: 64px;
+  }
+
+  .play-button__wrapper h3 {
+    position: absolute;
+    top: -5%;
+    left: 44%;
+    z-index: 3;
+    font-size: 48px;
+  }
+}
